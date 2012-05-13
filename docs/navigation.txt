@@ -1,0 +1,119 @@
+Navigation
+==========
+
+URLS
+----
+    APIs
+    http://twitpic.com/api.do
+    http://code.google.com/apis/picasa/docs/button_api.html
+    http://google-code-updates.blogspot.com/2008/03/add-your-own-buttons-to-picasa-upload.html
+
+    ttp://code.google.com/apis/picasa/docs/web_uploader.html
+
+    http://groups.google.com/group/google-picasa-apis/topics
+
+
+    Google TM Permission request
+    http://services.google.com/permissions/application
+
+
+    Quotes:
+    http://thinkexist.com/quotes/with/keyword/main/2.html
+    http://www.brainyquote.com/quotes/keywords/main.html
+    http://www.quotesdaddy.com/
+
+    Buttons:
+    http://www.mycoolbutton.com/index.php
+
+    PHP Errors Handling:
+    http://www.addedbytes.com/php/php-ini-guide-error-handling-and-logging/
+
+    Gallery Code:
+    http://bolgallery.free.fr/
+
+    Download stats code:
+    http://www.gayadesign.com/diy/download-counter-in-php-using-htaccess/
+
+    Popup Images:
+    http://jquery.com/demo/thickbox/
+
+Options
+-------
+    .psd - 50x40
+    bottom banner - 486 x 255
+    screenshots   - 486 x 326
+    GUID - {A7BA0A98-6C77-11DE-87A6-D57156D89593}
+
+Users and Contacts
+------------------
+    https://twitter.com/tvivo
+    email: tvivo@espectrale.com
+    email: www-data@crater.espectrale.com
+    twitter: @tvivo
+    mysql: tvivo
+
+    https://twitter.com/tvivo4test
+    email: tvivo4test@espectrale.com
+    twitter: @tvivo4test
+
+Quick start notes
+-----------------
+    1. domain tvivo.espectrale.com
+        @ -> tvivo
+
+    2. hosting infrastructure
+    cp -dpr /home/okertanov/public_html/template.espectrale.com /home/okertanov/public_html/tvivo.espectrale.com
+    sudo cp /etc/apache2/sites-available/default.espectrale.com /etc/apache2/sites-available/tvivo.espectrale.com
+    sudo vim /etc/apache2/sites-available/tvivo.espectrale.com
+    sudo a2ensite tvivo.espectrale.com
+    sudo /etc/init.d/apache2 reload
+
+    3. Google Analytics
+    http://www.google.com/analytics/
+    and add profile & ga.js snippet before </body> tag
+
+    4. SVN
+
+    5. SSL
+
+    6. VHost: Disable .svn access, Options -Indexes
+
+    7. Scripts & codding
+
+SSL
+---
+    sudo mkdir /etc/apache2/ssl
+    sudo apt-get install ssl-cert
+
+    sudo vim /usr/sbin/make-ssl-cert
+        > -days 1095
+
+    sudo /usr/sbin/make-ssl-cert /usr/share/ssl-cert/ssleay.cnf /etc/apache2/ssl/tvivo.espectrale.com.pem
+        LV, Rigas reg., Riga, espectrale.com, tvivo.espectrale.com, tvivo.espectrale.com, admin@espectrale.com,
+    sudo a2enmod ssl
+    sudo nano /etc/apache2/ports.conf
+    sudo vim /etc/apache2/sites-available/tvivo.espectrale.com
+    sudo /etc/init.d/apache2 force-reload
+
+Maintenance
+-----------
+    svn export svn+ssh://crater.espectrale.com/var/svn/repo/trunk/picasa-twitpic/site --force ./
+    svn co svn+ssh://crater.espectrale.com/var/svn/repo/trunk/picasa-twitpic/site ./
+
+    C:\Documents and Settings\oleg.kertanov\Local Settings\Application Data\Google\Picasa2\buttons
+
+    sudo chown www-data:www-data ./imgcache/
+    sudo chmod 777 ./imgcache/
+    sudo apt-get install php5-curl
+    sudo /etc/init.d/apache2 restart
+    sudo a2enmod include
+
+    sudo vim /etc/php5/apache2/php.ini
+    sudo /etc/init.d/apache2 restart
+
+    /usr/sbin/apache2ctl -S -- list virtual hosts
+
+Database
+--------
+    see db/scripts
+

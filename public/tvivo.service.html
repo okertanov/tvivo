@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--#include virtual="/meta.ssi"-->
+</head>
+
+<body>
+<div id="wrap">
+
+<div id="top"></div>
+
+<div id="content">
+
+    <div class="header">
+        <!--#include virtual="/header.ssi"-->
+    </div>
+
+    <div class="breadcrumbs">
+        <a href="/">Home</a> &middot; <a href="/tvivo.service.html">Tvivo Button</a> &middot; <span class="quotation">&ldquo;That service is the noblest which is rendered for its own sake.&rdquo;</span>
+    </div>
+
+<div class="middle">
+    <h2>Share your photos on the microblogging services with Tvivo</h2>
+    If you have read the home page carefully, you already know what it is. Now we will help you to add a new function to your Picasa by installing the Tvivo Button for Picasa on your computer.
+    <br /><br />
+    Pisaca's infrastructure known as PWU (Picasa Web Uploader) allows to integrate third-party image uploaders without downloading any executable code. A PWU service button is basically just an icon of the button itself with a text description in XML that Picasa can understand. Therefore, your computer cannot be in danger of virus infection as a result of this installation, unlike the binary plug-ins of other software products.
+    <br /><br />
+    First of all, make sure that Picasa is installed on your computer and is
+    fully functional. Next, to install the Tvivo Button for Picasa, read the
+    step-by-step instructions below, and then click the large Install button.
+    <br /><br />
+<script type="text/javascript">
+    var picasaInstalled = true;
+    var locparts = new Array();
+    locparts = document.location.href.split('/');
+    locparts.pop();
+    var pbzloc = locparts.join('/') + "/deploy/tvivo-twitpic-10.pbz";
+
+    if (picasaInstalled)
+    {
+        installmsg = '<a href="picasa://importbutton/?url=' + pbzloc + '"' + 'title="Install Tvivo Button"><img src="/buttons/btn-install-lightblue.png"/><\/a>';
+        document.write(installmsg);
+    }
+    else
+    {
+        document.write("Picasa is not installed<br/>");
+    }
+</script>
+    <br /><br />
+    <h2>Installation of the Tvivo Button for Picasa:</h2>
+    <br />
+    <h2>Click Install on this page. Click Yes to confirm installation in the Picasa dialog box that appears.</h2>
+    <img src="/images/tvivo-install-confirm.png" alt="Confirm Installation" />
+    <br />
+    <h2>After Picasa is launched, you will see a Configure Buttons dialog, in which you need to click Add and drag the Tvivo Button from the Available Buttons section into the Current Buttons section. Then click Ok.</h2>
+    <img src="/images/tvivo-install-configure-buttons.png" alt="Confirm Installation" />
+    <br />
+    <h2>This is it, the Tvivo Button is now in its place on the panel and you can start uploading images.</h2>
+    <img src="/images/tvivo-install-button-installed.png" alt="Confirm Installation" />
+    <br />
+    <h2>To upload, chose a photo in one of your collections in Picasa and click the Tvivo Button. Add text if you wish, then enter your Twitter name and password, and click Publish -- the photo you chose will go to the birds right away.</h2>
+    <img src="/images/tvivo-install-post.png" alt="Confirm Installation" />
+</div>
+
+<div class="right">
+    <!--#include virtual="/right-menu.ssi"-->
+</div>
+
+<div id="clear"></div>
+</div>
+
+<div id="bottom"></div>
+
+</div> <!-- Wrap -->
+
+<div id="footer"><!--#include virtual="/footer.ssi"--></div>
+
+<!--#include virtual="/google-analytics.ssi"-->
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<buttons format="1" version="1">
+    <button id="tvivo/{A7BA0A98-6C77-11DE-87A6-D57156D89593}" type="dynamic">
+    <placement>6.0</placement>
+    <icon name="{A7BA0A98-6C77-11DE-87A6-D57156D89593}/tvivologo" src="pbz"/>
+    <label>Tvivo</label>
+    <tooltip>Share your photos on the microblogging services with Tvivo</tooltip>
+    <action verb="hybrid">
+      <param name="url" value="http://tvivo.espectrale.com/upload/index.php"/>
+    </action>
+  </button>
+</buttons>

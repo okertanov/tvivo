@@ -1,0 +1,40 @@
+<html>
+<head>
+
+<!-- Detect if Picasa is installed -->
+<script type="text/javascript">
+  var _picasaInstalled = !!(navigator.mimeTypes['application/x-picasa-detect']);
+</script>
+<!--[if gte Picasa 2.0]>
+<script type="text/javascript">
+  _picasaInstalled = true;
+</script>
+<![endif]-->
+
+</head>
+<body>
+
+<!-- Write what you want based on install check -->
+<script type="text/javascript">
+
+  // find an absolute url for the pbz (from the page URL)
+  // It's usually better to use an absolute URL instead of this.
+
+  var locparts = new Array();
+  locparts = document.location.href.split('/');
+  locparts.pop();
+  var pbzloc = locparts.join('/') + "/picasa-twitpic-10.pbz";
+
+  if (_picasaInstalled)
+  {
+    installmsg = "Picasa is installed<br/><a href='picasa://importbutton/?url=" + pbzloc + "'>Install Twitpic button</a>";
+    document.write(installmsg);
+  }
+  else
+  {
+    document.write("Picasa is not installed<br/>");
+  }
+
+</script>
+</body>
+</html>

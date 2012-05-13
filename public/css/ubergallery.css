@@ -1,0 +1,171 @@
+/* ---------------------------------------- */
+/* ----|  UBER GALLERY  |------------------ */
+/* ---------------------------------------- */
+
+html {
+  font-size: 100%;
+}
+
+body {
+  background: #323232 url(../images/bg.png) repeat top left;
+  font-family: sans-serif, serif;
+  font-size: 1em;
+}
+
+#gallery-wrapper {
+  width: 100%; /* Leave this value, change width below */
+}
+
+#gallery-constraint {
+  margin: 1em auto;
+  width: 740px; /* Change gallery width here */
+}
+
+#gallery-header {
+  background-color: #DDF;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  color: #369;
+  font-weight: bold;
+  padding: 8px 10px;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+}
+
+#gallery-images {
+  background-color: #FFF;
+  padding: 10px;
+}
+
+#gallery-images a {
+  background-color: #FFF;
+  border: 1px solid #ACACAC;
+  border-radius: 3px;
+  display: block;
+  float: left;
+  margin: 5px !important;
+  padding: 4px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
+
+#gallery-images a:hover {
+  border: 1px solid #707070;
+}
+
+#gallery-images img {
+	border: none;
+}
+
+#uber-footer {
+  background-color: #DDF;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: #369;
+  padding: 6px 10px;
+  -moz-border-radius-bottomleft: 5px;
+  -moz-border-radius-bottomright: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+}
+
+#credit {
+  float: right;
+  font-size: .8em;
+  margin: 4px 0;
+}
+
+#credit a {
+  color: #369;
+}
+
+#credit a:hover {
+  color: #333;
+}
+
+#uber-notice {
+  background-color: #369;
+  color: #FFF;
+  padding: 5px;
+  text-align: center;
+}
+
+#uber-notice a, #uber-notice a:visited {
+  color: #FFF;
+}
+
+/* --- CLEAR FIX --- */
+
+.clearfix:after {
+  content: ".";
+  display:block;
+  height:0;
+  clear:both;
+  visibility:hidden;}
+.clearfix {display:inline-block;}
+/* Hides from IE-mac \*/
+* html .clearfix { height:1%;}
+.clearfix {display:block;}
+/* End hide from IE-mac */
+
+
+/* ---------------------------------------- */
+/* ----|  PAGINATION  |-------------------- */
+/* ---------------------------------------- */
+
+#uber-pagination {
+  color: #369;
+  float: left;
+  font-size: .8em;
+  margin: 0 !important;
+  padding: 0 !important;
+  text-align: center;
+}
+
+#uber-pagination li {
+  border: 1px solid transparent;
+  display: block;
+  float: left;
+  list-style: none;
+  margin: 0 2px 0 0 !important;
+  -moz-border-radius: 3px;
+}
+
+#uber-pagination li:hover {
+  background-color: #EFEFEF;
+  border: 1px solid #CCC;
+}
+
+#uber-pagination li.title {
+  background: transparent url(../images/page_white_stack.png) no-repeat left center;
+  border: 1px solid transparent;
+  font-weight: normal;
+  padding: 3px 6px 3px 22px;
+}
+
+#uber-pagination li a, #uber-pagination li a:visited {
+  color: #369;
+  display: block;
+  padding: 3px 6px;
+  text-decoration: none;
+}
+
+#uber-pagination li.current-page {
+   background-color: transparent;
+  border: 1px solid transparent;
+  color: #333;
+  font-weight: bold;
+  padding: 3px 6px;
+}
+
+#uber-pagination li.inactive {
+  background-color: transparent;
+  color: #ACACAC;
+  border: 1px solid transparent;
+  display: block;
+  padding: 3px 6px;
+}
+
+/* gallery.css Created by, Chris Kankiewicz <http://www.ubergallery.net> */
